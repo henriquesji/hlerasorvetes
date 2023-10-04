@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Big+Shoulders+Text&family=Lato:wght@300&family=Roboto:wght@400;500;900&family=Sora:wght@300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border:none;
+    outline: none;
+
+
+}
+html{
+    width:100vw;
+    height:100vh;
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.content{
+    width:100vw;
+    height: 70px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#0a3864;
+    position: fixed;
+    padding-left: 30rem;
+}
+.logo{
+    width:10px;
+    height:auto;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    margin-right: 45px;
+      
+}
+
+
+.logo img{
+    width:400%;
+    height: 400%;
+    display:inline;
+    border-radius:15px;
+   
+}
+.content .list-menu{
+    width:900px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.content .list-menu li a{
+    padding-top:3rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color:white;
+    font-size:1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms case-in;
+}
+.content .list-menu li a:hover{
+    background-color: #3333;
+    border-bottom:4px solid #f0e813;
+    color:#f0e813;
+}
+
+.first-section{
+    height:100vh;
+    background-image:linear-gradient(rgba(29,29,29,0.8),rgba(29,29,29,0.8)),url(./acai.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no repeat;
+    
+    width:100vw;
+    display:flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
+.first-section .conteudo-principal{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.first-section h1{
+  color:#f0e813;
+  font-size:3rem;
+  text-transform: uppercase;  
+  margin-bottom: 3rem;
+  
+}
+.first-section h2{
+    color:#f0e813;
+    font-size:3rem;
+    font-weight: 400;
+    text-transform:uppercase;
+    margin-bottom:3rem;
+
+}
+.btn button{
+    width:230px;
+    height:60px;
+    cursor:pointer;
+    text-transform:uppercase;
+    background-color:#0a3864;
+    border-radius:10px;
+    color:#f0e813;
+    font-weight:700;
+    margin-top:5rem;
+    transition: all 400ms case-in;
+}
+.btn button:hover{
+    border:1px solid #f0e813;
+    background-color:transparent;
+    color:#0a3864;
+}
+.btn{
+    width:480px;
+    display:flex;
+    justify-content: space-between;
+}
+
+/* sobre nos */
+.sobre-nos{
+    background-color: #2d1f25;;
+    width: 100%;
+    padding-bottom: 5rem;
+    color:aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   
+}
+.sobre-nos img{
+    width: 350px;
+    height: 350px;
+    margin-top:5rem;
+    margin-left: 10rem;
+border:2px solid rgb(155,155,155);
+}
+.main {
+    display:flex;
+    justify-content: space-between;
+}
+.contentsobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contentsobre h2{
+    font-size:6rem;
+    margin-bottom: 1rem;
+    color:#0a3864; 
+
+}
+.contentsobre p{
+    text-align: center;
+    font-size:1.8rem;
+    width: 450px;
+}
+.contatos-secao{
+    width:100%;
+    background-color: #1f1e1f;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:1.4rem;
+    color:white;
+    padding-bottom: 2rem;
+}
+.contatos h3{
+    display:flex;
+    color:blue;    
+   justify-content: center;
+}
+.contatos-secao{
+    width: 100wv;
+    display:flex;
+    justify-content:space-around;
+    font-size: 1.4rem;
+
+}
+.contatos-secao i{
+    margin-right: 1rem;
+}
+.contatos-secao div{
+    cursor: pointer;
+}
+.contatos-secao div :hover{
+    color:#ffc506;
+}
+
+
+.cardapio{
+    width: 100vw;
+    display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(12,12,12,0.8);
+}
+.cardapio h2{
+    font-size:5rem;
+    color:#f0e813;
+    text-transform: uppercase;
+}
+.itens-cardapio{
+    width:80%;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 550px));
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+.itens-cardapio .info{
+    background-color: rgb(221,221,221);
+    border:none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:1.5 rem;
+   }
+   .itens-cardapio .info h3{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom:1rem;
+    text-decoration: underline;
+   }
+.itens-cardapio .info h4{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px  150px;
+    margin-left: 6rem;
+}
+.itens-cardapio .info h4 span{
+    font-size: 1.6rem;
+    color:#0a3864;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+}
+.itens-cardapio div{
+    background-color:#5e5252;
+    box-shadow:  0px 0px 4px 1px;
+}
+.itens-cardapio img{
+    width: 100%;
+    height: 200px;
+}
+.itens-cardapio .info .pedir{
+    width: 200px;
+    height: 35px;
+    margin-top:5rem;
+    background-color: #f0e813;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color:#0a3864;
+    transform: all 200ms case-in;
+}
+.itens-cardapio .info .pedir:hover{
+    color:white;
+    background-color: #2d1f25;
+
+}
+.footer{
+    height: 25px;
+    background-color:red;
+    color:rgb(255, 255, 255);
+    font-size:1.4rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif    
+}
+.footer h1{
+    color:#f0e813;
+    background-color: #1f1e1f;
+    
+}
+
+
+    
+
+
+
+
