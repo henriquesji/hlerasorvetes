@@ -29,25 +29,26 @@ html{
     padding-left: 30rem;
 }
 .logo{
-    width:10px;
-    height:auto;
+    width:70px;
+    height:70px;
+    padding-top:19px;
     cursor:pointer;
     display:flex;
     align-items: center;
-    margin-right: 45px;
-      
+        
 }
-
+.logo h3{
+    color:#f0e813;    
 
 .logo img{
-    width:400%;
-    height: 400%;
-    display:inline;
+    width:100wv;
+    height:5vh;
     border-radius:15px;
    
 }
 .content .list-menu{
-    width:900px;
+    width:900;
+    padding-top:15px;
     display:flex;
     align-items: center;
     justify-content: space-between;
